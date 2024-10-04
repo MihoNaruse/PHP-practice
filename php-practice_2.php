@@ -38,13 +38,22 @@ foreach ($personalInfos as $index => &$info) {
 var_dump($personalInfos);
 // Q3 オブジェクト-1
 
+class Student
+{
+    public $studentId;
+    public $studentName;
 
+    public function __construct($id, $name)
+    {
+        $this->studentId = $id;
+        $this->studentName = $name;
+    }
 public function introduce()
     {
 
     echo "学籍番号{$this->studentId}番の生徒は{$this->studentName}です。\n";
 }
-
+}
 
 $student = new Student(120, '山田');
 
@@ -69,6 +78,13 @@ $date = new DateTime('2021-03-02');
 $date->modify('-1 month');
 
 echo $date->format('Y-m-d');
+
+
+$date = (new DateTime('2021-03-02'))->modify('-1 month')->format('Y-m-d');
+
+echo $date;
+
+
 //問題2
 
 $today = new DateTime('now');

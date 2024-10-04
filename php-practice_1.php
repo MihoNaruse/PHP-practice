@@ -46,7 +46,7 @@ echo $message;
 // Q6 配列
 $area = ['東京都', '神奈川県', '埼玉県','栃木県','千葉県'];
 
-echo $area[3]  ."と" . $area[4] ."は関東地方の都道府県です。" ;
+echo $area[2]  ."と" . $area[3] ."は関東地方の都道府県です。" ;
 
 // Q7 連想配列-1
 $area = array("東京都"=>"新宿区", "神奈川県"=>"横浜市", "千葉県"=>"千葉市", "埼玉県"=>"さいたま市","栃木県"=>"宇都宮市","群馬県"=>"前橋市","茨城県"=>"水戸市");
@@ -95,7 +95,7 @@ calcTaxInPrice($price);
 function calcTaxInPrice($price)
 {
   $taxInPrice = $price * 1.10;
-  echo $price."円の商品の税込価格は".$taxInPrice."です。";
+  echo $price."円の商品の税込価格は".$taxInPrice."円です。";
 }
 
 // Q12 関数とif文
